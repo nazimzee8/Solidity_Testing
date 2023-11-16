@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css", href="indexcss.css">
+        <div class="container">
+            <div class="header"> 
+                <h1> Mobile Edge Computing Optimization </h1>
+                <div class="veh-register">
+                    <a href="">Register Vehicle</a>
+                </div>
+            </div>
+
+            <div class="vehicle-panel">
+                <div class="sub-panel1"> 
+                    <img src="../img/vehicle.png"> </img>
+                    <div class="states">
+                        <input type="radio" name="state" value="park"> Park </br>
+                        <input type="radio" name="state" value="reverse"> Reverse </br>
+                        <input type="radio" name="state" value="neutral"> Neutral </br>
+                        <input type="radio" name="state" value="drive"> Drive </br>
+                    </div>
+                    <div class="veh-name">
+                        <h1> Vehicle Name </h1>
+                        <h2> Temporary Name </h2>
+                    </div>
+                    <div class="last-transaction"> 
+                        <h1> Last Transaction </h1>
+                        <h2> Temporary Time </h2> 
+                    </div>
+                    <div class="current-status">
+                        <h1> Current Status </h1>
+                        <h2> Covered </h2>
+                    </div>
+                     <h1 id="VIN"> VIN: placeholder </h1>
+                </div>
+
+                <div class="line1">
+                </div>
+
+                <div class="sub-panel2">
+                    <div class="top-speed">
+                        <h1> Top Speed </h1>
+                        <h2> 0 </h2>
+                        <h3> km/hr </h3>
+                    </div>
+                    <div class="current-speed">
+                        <h1> Current Speed </h2>
+                        <h2> 0 </h2>
+                        <h2> km/hr </h3>
+                    </div>
+                    <div class="last-interaction">
+                        <h1> Distance since Last Transaction <h1>
+                        <h2> 0 </h2>
+                        <h3> kms </h3>
+                    </div>
+                </div>
+
+                <div class="line2"></div>
+
+                <script type="text/javascript">
+                    function initMap() {
+                        var uluru = {lat: 47.244839, lng: -122.437828};
+                        var map = new google.maps.Map(document.getElementById("google-map"), {
+                            zoom: 10, 
+                            center: uluru,
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map,
+                        });
+                    }
+                </script>
+
+                 <div id="google-map">
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbz6Wzuvi3J_R2Ig22j0nKX35K232IQgE&callback=initMap&libraries=&v=weekly" async></script>
+                
+                <div class="sub-panel3"> 
+                    <div class="conditions"> 
+                        <h1> Special Conditions </h1>
+                        <h2> Placeholder </h2>
+                    </div>
+                </div>
+                <div class="line3"></div>
+                <div class="last-payment">
+                    <h1> Time Since Last Transaction </h1>
+                    <h2> 00:00:00 </h2>
+                </div>
+
+                <div class="mid-panel">
+                    <div class="estimated-next">
+                        <h1> Estimated Next Charge </h1>
+                        <h2> $0.0000 </h2>
+                        <h3> 00000 ether </h3>
+                    </div>
+                    <div class="funds">
+                        <h1> Funds </h1>
+                        <h2> $00.00 </h2>
+                        <h3> 00000 ether </h3>
+                    </div>
+                    <div class="service-provider">
+                        <h1> Best service provider </h1>
+                        <h2> Placeholder provider </h2>
+                    </div>
+                </div>
+                <div class="line4"></div>
+                <div class="transaction-history">
+                    <h1> Transaction Status </h1>
+                </div>
+                <div class="transaction-data">
+                    <h1 id='special-cond'> Special Conditions </h1>
+                    <h1 id='top-speed'> Top Speed </h1>
+                    <h1 id='dist'> Distance </h1>
+                    <h1 id='end-time'> End Time </h1>
+                    <h1 id='charge'> Charge </h1>
+                    <h1 id='provider'> Best Provider </h1>
+                </div>
+            </div>
+        </div>
+    </head>
+</html>

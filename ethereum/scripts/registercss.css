@@ -1,0 +1,244 @@
+.full-box {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    
+}
+
+.left-box {
+    position: relative;
+    background-color: white;
+    display: block;
+    left: 15%;
+    margin-top: 10px;
+    min-width: 50vw;
+    width: 50%;
+    height: auto;
+    font-family: sans-serif;
+	backface-visibility: visible;
+    /*transform: scale(0.6, 0.5);*/
+}
+
+.left-box img {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.left-box h1 {
+    font-size: 22px;
+}
+
+.left-box h2 {
+    font-size: 12px;
+    opacity: 0.75;
+    color: #0f2dc4;
+}
+
+#alt-email {
+    position: relative;
+    display: inline-block;
+    left: 95px;
+    top: 50px;
+}
+
+.separator-left {
+    position: relative;
+    right: 85px;
+    background: #0f2dc4;
+    display: inline-block;
+    width: 75px;
+    opacity: 0.25;
+    top: 30px;
+}
+
+.separator-right {
+    position: relative;
+    left: 128px;
+    background: #0f2dc4;
+    display: inline-block;
+    width: 70px;
+    opacity: 0.25;
+    top: -26px;
+}
+
+.left-box button[id=google] {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background: white;
+    top: 40px;
+    border-style: groove;
+    border-color: rgb(223, 219, 219);
+    border-radius: 15px;
+    outline: none;
+    height: 35px;
+    width: 300px;
+    color: black;
+    font-size: 13px;
+}
+
+.user-info {
+    position: relative;
+    display: block;
+    bottom: 40px;
+}
+
+.left-box p {
+    position: relative;
+    top: 70px;
+    font-weight: bold;
+}
+
+
+.left-box input[type="text"], input[type="password"] {
+    position: relative;
+    top: 70px;
+    border-style: groove;
+    border-color: rgb(223, 219, 219);
+    border-radius: 15px;
+    outline: none;
+    background: white;
+    height: 35px;
+    width: 300px;
+    color: rgb(191, 184, 184);
+    font-size: 13px;
+}
+
+.cookie {
+    position: relative;
+    display: block;
+    top: 55px;
+    width: auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.cookie [type="checkbox"] {
+    position: relative;
+    float: left;
+}
+
+.cookie a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0f2dc4;
+}
+
+
+.left-box button[id='regi'] {
+    text-align: center;
+    position: relative;
+    display: block;
+    top: 80px;
+    right: 20px;
+    border-radius: 15px;
+    outline: none;
+    height: 40px;
+    width: 310px;
+    background: #0f2dc4;
+    color: #fff;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.login-link h3 {
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    top: 95px;
+    font-weight: bold;
+}
+
+.login-link a {
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0f2dc4;
+}
+
+.copyright h1 {
+    position: relative;
+    display: block;
+    top: 100px;
+    left: 5px;
+    color: #0f2dc4;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.right-box {
+    position: relative;
+    float: right;
+    background: rgb(53,45,182);
+    background: radial-gradient(circle, rgba(53,45,182,0.8426395939086294) 0%, rgba(49,43,181,1) 0%, rgba(62,165,207,1) 100%);
+    box-sizing: border-box;
+    transform: translateY(-90%);
+    width: 50%;
+    height: 860px;
+}
+
+.right-box img[class="secure"] {
+    position: relative;
+    display: block;
+    z-index: 2;
+    top: 30%;
+    left: 35%;
+    width: 250px;
+    height: 250px;
+}
+
+.right-box img[class="ethereum"] {
+    position: relative;
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-left: 5%;
+    bottom: 15%;
+}
+
+.right-box img[class="key_lock"] {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    top: 55.5%;
+}
+
+.caption1 {
+    color: white;
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 32%;
+    left: 20%;
+    overflow-wrap: break-word; 
+    box-sizing: border-box;
+}
+
+.caption1 h1 {
+    position: relative;
+    display: block;
+    width: 28.5vw;
+}
+
+.caption1 h2 {    
+    position: relative;
+    display: block;
+    font-size: 11px;
+    width: 15vw;
+    top: 5%;
+    left: 15%;
+}

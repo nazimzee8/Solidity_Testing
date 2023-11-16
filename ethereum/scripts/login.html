@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css", href="logincss.css">
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="./interact.js"> </script>
+        <div class="container">
+            <div class ="left-box">
+                <img src="../img/Block.png"> </img>
+                <h1> Login </h1>
+                <h2> Login and invest in your own autonomous vehicle! </h2>
+                 <div class="google-btn" data-onsuccess="onSignIn" data-theme="dark">
+                    <button id="google" type="button"> Sign in with Google </button>
+                </div>
+
+                 <script type="text/javascript">
+                    var google = false;
+                    var firstName;
+                    var lastName;
+                    var email;
+                    function onSignIn() {
+                        var instance = gapi.auth2.getAuthInstance();
+                        instance.signIn().then((response)) => {
+                            var profile = response.getBasicProfile();
+                            firstName = profile.getGivenName();
+                            lastName = profile.getFamilyName();
+                            email = profile.getEmail();
+                            registerOwner(firstName, lastName, email);
+                            location.href = './index.html';
+                        }
+                    }
+                    document.getElementById("google").addEventListener("click", onSignIn);
+                </script>
+
+                <div id="alt-email"> 
+                    <hr class="separator-left">
+                    <h2> or Sign in with Email </h2>
+                    <hr class="separator-right">
+                </div>
+
+                <p> Email* </p>
+                <i class="fa fa-envelope icon"></i>
+                <input type="text" name="email" id="email" placeholder="Enter Email">
+                <p> Password* </p>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <script type="text/javascript">
+                    var login = true;
+                    const email = document.getElementById('email');
+                    if (accounts.get(email) != password) {
+                        login = false;
+                    }
+                    function login() {
+                        if (login) {
+                            location.href = './index.html';
+                        }
+                        else {
+                            alert("Login failed.");
+                        }
+                    }
+                    document.getElementById('')
+                </script>
+
+                <label class="cookie">Remember Me
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <a href="">Forget Password? </a>
+                </label>
+                <div class="login-btn"> 
+                    <button id='login'> Login </button>
+                </div>
+
+                <div class="create-link">
+                    <h3> Not registered yet? <h3>
+                    <a href="">Create an Account </a>
+                </div>
+
+                <div class="copyright"> 
+                    <h1> &copy2021 University of Washington All rights reserved. <h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-box"> 
+            <img src="../img/secure.png" class="secure"> </img>
+            <img src="../img/ethereum.png" class="ethereum"> </img>
+            <div class="caption1"> 
+                <h1> Maintain security and authenticity of your vehicles. </h1>
+                <h2> Consistent security and integrity through deployment of vehicles across ethereum blockchain. </h2>
+            </div>
+        </div>
+    </head>
+</html>

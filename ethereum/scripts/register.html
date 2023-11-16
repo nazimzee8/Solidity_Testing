@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css", href="registercss.css">
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+        <script src='./interact.js' type='text/javascript'> </script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <div class="container">
+            <div class ="left-box">
+                <img src="../img/Block.png"> </img>
+                <h1> Register </h1>
+                <h2> Sign up and invest in your own autonomous vehicle! </h2>
+                <div class="google-btn" data-onsuccess="onSignIn" data-theme="dark">
+                    <button id="google" type="button"> Sign in with Google </button>
+                </div>
+                <script type="text/javascript">
+                    var google = false;
+                    var firstName;
+                    var lastName;
+                    var email;
+                    function onSignIn() {
+                        var instance = gapi.auth2.getAuthInstance();
+                        instance.signIn().then((response)) => {
+                            var profile = response.getBasicProfile();
+                            firstName = profile.getGivenName();
+                            lastName = profile.getFamilyName();
+                            email = profile.getEmail();
+                            registerOwner(firstName, lastName, email);
+                            location.href = './index.html';
+                        }
+                    }
+                    document.getElementById("google").addEventListener("click", onSignIn);
+                </script>
+                <div id="alt-email"> 
+                    <hr class="separator-left">
+                    <h2> or Sign in with Email </h2>
+                    <hr class="separator-right">
+                </div>
+
+                <div class="user-info">
+                    <p> First Name* </p>
+                    <input type="text" name="first_name" id='first_name' placeholder="Enter First Name">
+                    <p> Last Name* </p>
+                    <input type="text" name="last_name" id='last_name' placeholder="Enter Last Name">
+                    <p> Email* </p>
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="text" name="email" id='email' placeholder="Enter Email">
+                    <p> Password* </p>
+                    <input type="password" name="password" id='password' placeholder="Enter Password">
+                    
+                    <script type='text/javascript'>
+                        var login = true;
+                        firstName = document.getElementById('first_name').value;
+                        lastName = document.getElementById('last_name').value;
+                        email = document.getElementById('email').value;
+                        password = document.getElementById('password').value;
+                        const regex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+                        function validateEmail(email) {
+                            const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+                            return re.test(email);
+                        }
+                        if (firstName.length == 0 || regex.test(firstName)) {
+                            alert("First name cannot be empty and cannot contain special characters.");
+                            login = false;
+                        }
+                        else if (lastName.length == 0 || regex.test(lastName)) {
+                            alert("Last name cannot be empty and cannot contain special characters.");
+                        }
+                        else if (password.length < 8 || !regex.test(password)) {
+                            alert("Password must contain at least 8 characters and at least 1 special character");
+                            login = false;
+                        }
+                        else if (!validEmail(email)) {
+                            alert("Email must be of a valid format.");
+                            login = false;
+                        }
+                    }
+                    </script>
+
+                </div>
+
+                <label class="cookie">I agree to the
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <a href="">Terms & Conditions </a>
+                </label>
+
+                <div class="register-btn"> 
+                    <button id="regi"> Register </button>
+                </div>
+                <script type='text/javascript'>
+                    function loginPage() {
+                        if (login == true) {
+                            location.href = "./index.html";
+                            registerOwner(firstName, lastName, email);
+                        }
+                        else alert("Registration failed.");
+                    }
+                    document.getElementById('regi').addEventListener('click', loginPage);
+                </script>
+
+                <div class="login-link">
+                    <h3> Already have an Account? <h3>
+                    <a href="./login.html"> Sign In. </a>
+                </div>
+
+                <div class="copyright"> 
+                    <h1> &copy2021 University of Washington All rights reserved. <h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-box"> 
+            <img src="../img/secure.png" class="secure"> </img>
+            <img src="../img/ethereum.png" class="ethereum"> </img>
+            <div class="caption1"> 
+                <h1> Maintain security and authenticity of your vehicles. </h1>
+                <h2> Consistent security and integrity through deployment of vehicles across ethereum blockchain. </h2>
+            </div>
+        </div>
+    </head>
+</html>

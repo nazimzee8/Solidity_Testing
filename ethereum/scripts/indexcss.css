@@ -1,0 +1,503 @@
+body {
+    background: rgb(53,45,182);
+    background: radial-gradient(circle, rgba(53,45,182,0.8426395939086294) 0%, rgba(49,43,181,1) 0%, rgba(62,165,207,1) 100%);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 50vw) { 
+    .last-transaction .current-status { 
+      display: none; 
+    } 
+  }
+
+.header {
+    background: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: block;
+    margin-top: -0.8%;
+}
+
+.header h1 {
+    color: #0f2dc4;
+    opacity: 0.5;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.veh-register {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    margin-left: 2%;
+}
+
+.veh-register a {
+    color: #0f2dc4;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.vehicle-panel {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30%;
+    margin-top: -0.2%;
+}
+
+.sub-header1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #4a5696;
+    opacity: 0.75;
+}
+
+.sub-header1 h1 {
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#VIN {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 10%;
+    margin-left: 3.5%;
+    line-height: 20px;
+    height: 20px;
+    background: #4a5696;
+    opacity: 0.75;
+}
+
+.sub-panel img {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.states {
+    position: relative;
+    display: inline-block;
+    background: #4a5696;
+    opacity: 0.75;
+    color: white;
+    top: -20px;
+    margin-left: 2.5%;
+}
+
+.veh-name {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin-left: 7%;
+    top: -30px;
+    overflow: hidden;
+}
+
+.veh-name h1 {
+    font-size: 22px;
+    color: white;
+}
+
+.veh-name h2 {
+    font-size: 15px;
+    color: white;
+}
+
+.last-transaction {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-left: 5%;
+    top: -30px;
+    overflow: hidden;
+}
+
+.last-transaction h1 {
+    font-size: 22px;
+    color: white;
+}
+
+.last-transaction h2 {
+    font-size: 15px;
+    color: white;
+}
+
+.current-status {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    margin-left: 5%;
+    top: -30px;
+    overflow: hidden;
+}
+
+.current-status h1 {
+    font-size: 22px;
+    color: white;
+}
+
+.current-status h2 {
+    font-size: 15px;
+    color: white;
+}
+
+.line1 {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    background: #4a5696;
+    opacity: 0.75;
+    width: 100%;
+    padding: 1px;
+}
+
+.sub-panel2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.top-speed {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10%;
+    margin-left: 2%;
+    top: 1%;
+}
+
+.top-speed h1 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    color: white;
+    top: 2%;
+}
+
+.top-speed h2{
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.top-speed h3 {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.current-speed {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10%;
+    top: 1%;
+}
+
+.current-speed h1 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    color: white;
+    top: 2%;
+}
+
+.current-speed h2{
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.current-speed h3 {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.last-interaction {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    margin-left: 2%;
+    top: 1%;
+}
+
+.last-interaction h1 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    color: white;
+    top: 2%;
+}
+
+.last-interaction h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.last-interaction h3 {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+#google-map {
+    position: relative;
+    display: inline-block;
+    top: 1.5%;
+    height: 200px;
+    width: 20%;
+}
+
+.line2 {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    background: #4a5696;
+    opacity: 0.75;
+    width: 60%;
+    padding: 1px;
+}
+
+.line3 {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    background: #4a5696;
+    opacity: 0.75;
+    width: 40%;
+    padding: 1px;
+    top: -100px;
+}
+
+.sub-panel3 {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.conditions h1 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    color: white;
+    top: -8%;
+}
+
+.conditions h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.last-payment {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    margin-left: -35%;
+    top: -30px;
+    color: white;
+}
+
+.last-payment h1 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    top: -8%;
+}
+
+.last-payment h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    margin-top: -1%;
+    left: 7%;
+}
+
+.mid-panel {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: white;
+    background: #4a5696;
+    opacity: 0.75;
+    width: 100%;
+    padding: 3%;
+}
+
+.estimated-next {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+
+.estimated-next h1 {
+    font-size: 22px;
+}
+
+.estimated-next h2 {
+    font-size: 18px;
+}
+
+.estimated-next h3 {
+    font-size: 15px;
+}
+
+.funds {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-left: 275px;
+}
+
+.funds h1 {
+    font-size: 22px;
+}
+
+.funds h2 {
+    font-size: 18px;
+}
+
+.funds h3 {
+    font-size: 15px;
+}
+
+.service-provider {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin-left: 275px;
+    top: -30px;
+}
+
+.service-provider h1 {
+    font-size: 22px;
+}
+
+.service-provider h2 {
+    font-size: 18px;
+}
+
+.service-provider h3 {
+    font-size: 15px;
+}
+
+.line4 {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    background: #4a5696;
+    opacity: 0.75;
+    width: 100%;
+    padding: 1px;
+    top: 20px;
+}
+
+.transaction-history {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+
+.transaction-data {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background: #4a5696;
+    opacity: 0.75;
+    color: white;
+}
+
+.transaction-data h1[id='special-cond'] {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+
+.transaction-data h1[id='top-speed'] {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin-left: 20%;
+}
+
+.transaction-data h1[id='dist'] {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.transaction-data h1[id='end-time'] {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.transaction-data h1[id='charge'] {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.transaction-data h1[id='provider'] {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    margin-left: 25%;
+}

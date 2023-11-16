@@ -1,0 +1,20 @@
+{
+  "config": {
+    "chainId": 4,
+    "homesteadBlock": 0,
+    "epi155Block": 0,
+    "epi158Block": 0,
+    "ByzantiumBlock": 0
+  },
+  "difficulty": "0x400",
+  "gasLimit": "0x8000000",
+  "nonce": "0xdeadbeefdeadbeef",
+  "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "alloc": {
+    "82c440bba462220c9b54600e584373014706c177": { 
+    "balance": "100000000000000000000000" 
+    },
+    "9db5b590fdecc10cdb04b85a3503e94e61b207ca": { 
+    "balance": "120000000000000000000000" 
+    }
+}
